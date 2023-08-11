@@ -1,0 +1,11 @@
+[package]
+name = "learning-async-rust-with-too-many-web-servers"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+epoll = "4.3.3"
+signal-hook = "0.3.17"
+tokio = { version = "1.30.0", features = ["full"] }
