@@ -123,7 +123,7 @@ fn main() {
             }
         }
 
-        for i in completed {
+        for i in completed.into_iter().rev() {
             connections.remove(i);
         }
     }
