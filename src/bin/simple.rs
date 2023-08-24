@@ -33,7 +33,7 @@ fn handle_connection(mut connection: TcpStream) -> io::Result<()> {
         read += num_bytes;
 
         // have we reached the end of the request?
-        if request.get(read - 4..read) == Some(b"\r\n\r\n") {
+        if request.get((read - 4)..read) == Some(b"\r\n\r\n") {
             break;
         }
     }
